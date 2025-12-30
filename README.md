@@ -41,7 +41,7 @@ global-seismic-trends/
 │ └── analysis_queries.sql
 │
 ├── dashboard/
-│ └── app.py
+│ └── dash.py
 │
 ├── requirements.txt
 └── README.md
@@ -95,7 +95,7 @@ This file does **not** run the Streamlit dashboard. Streamlit is intentionally k
 
 ---
 
-### `dashboard/app.py`
+### `dashboard/dash.py`
 - Streamlit application for interactive visualization
 - Connects directly to the MySQL database
 - Provides filters and visual insights into earthquake trends
@@ -128,7 +128,7 @@ Step 3: Run Streamlit Dashboard (Separately)
 
 The Streamlit dashboard should be run independently from the data pipeline.
 
-python -m streamlit run dashboard/app.py --server.address localhost --server.port 9000
+python -m streamlit run dashboard/dash.py --server.address localhost --server.port 9000
 
 Important Note
 
